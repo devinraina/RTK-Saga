@@ -1,0 +1,79 @@
+// import { render, screen } from '@testing-library/react';
+// import { Provider } from 'react-redux';
+// import configureStore from 'redux-mock-store';
+
+// import App from './App';
+
+// const mockStore = configureStore([]);
+
+// describe('App', () => {
+//   let store;
+
+//   beforeEach(() => {
+//     store = mockStore({
+//       cats: {
+//         cat1: {
+//           name: 'Persian',
+//           temperament: 'Calm',
+//           description: 'The Persian cat is...',
+//           url: 'https://example.com/cat1.jpg'
+//         },
+//         cat2: {
+//           name: 'Siamese',
+//           temperament: 'Playful',
+//           description: 'The Siamese cat is...',
+//           url: 'https://example.com/cat2.jpg'
+//         }
+//       }
+//     });
+//   });
+
+//   test('renders the correct title', async () => {
+//     render(
+//       <Provider store={store}>
+//         <App />
+//       </Provider>
+//     );
+
+//     expect(await screen.findByText('Welcome to Cat App')).toBeInTheDocument();
+//   });
+// });
+
+
+//     const titleElement = screen.getByText(/Cat Species Gallery/i);
+//     expect(titleElement).toBeInTheDocument();
+//   });
+
+//   test('renders the correct number of cat items', () => {
+//     render(
+//       <Provider store={store}>
+//         <App />
+//       </Provider>
+//     );
+
+//     const catItems = screen.getAllByTestId('cat-item');
+//     expect(catItems).toHaveLength(2);
+//   });
+
+//   test('renders the cat name, temperament, and description correctly', () => {
+//     render(
+//       <Provider store={store}>
+//         <App />
+//       </Provider>
+//     );
+
+//     const catName1 = screen.getByText(/Persian/i);
+//     const catTemperament1 = screen.getByText(/Calm/i);
+//     const catDescription1 = screen.getByText(/The Persian cat is.../i);
+
+//     const catName2 = screen.getByText(/Siamese/i);
+//     const catTemperament2 = screen.getByText(/Playful/i);
+//     const catDescription2 = screen.getByText(/The Siamese cat is.../i);
+
+//     expect(catName1).toBeInTheDocument();
+//     expect(catTemperament1).toBeInTheDocument();
+//     expect(catDescription1).toBeInTheDocument();
+
+//     expect(catName2).toBeInTheDocument();
+//     expect(catTemperament2).toBeInTheDocument();
+//     expect(catDescription2).toBeInTheDocument();
